@@ -92,7 +92,7 @@ from qwenimage.qwen_fa3_processor import QwenDoubleStreamAttnProcessorFA3
 dtype = torch.bfloat16
 
 pipe = QwenImageEditPlusPipeline.from_pretrained(
-    "FireRedTeam/FireRed-Image-Edit-1.0",
+    "FireRedTeam/FireRed-Image-Edit-1.1", # ---> Prev: FireRedTeam/FireRed-Image-Edit-1.0
     transformer=QwenImageTransformer2DModel.from_pretrained(
         "prithivMLmods/Qwen-Image-Edit-Rapid-AIO-V19",
         torch_dtype=dtype,
@@ -226,7 +226,7 @@ css = """
 with gr.Blocks() as demo:
     with gr.Column(elem_id="col-container"):
         gr.Markdown("# **FireRed-Image-Edit-1.0-Fast**", elem_id="main-title")
-        gr.Markdown("Perform image edits using [FireRed-Image-Edit-1.0](https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0) with 4-step fast inference.")
+        gr.Markdown("Perform image edits using [FireRed-Image-Edit-1.0](https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0) with 4-step fast inference. Open on [GitHub](https://github.com/PRITHIVSAKTHIUR/FireRed-Image-Edit-1.0-Fast)")
 
         with gr.Row(equal_height=True):
             with gr.Column():
