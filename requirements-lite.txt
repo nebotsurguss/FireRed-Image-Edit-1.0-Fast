@@ -1,0 +1,17 @@
+# Requirements for Lightweight Dependencies
+
+This file describes the lightweight dependencies optimized for weaker hardware.
+
+## Dependencies
+
+- `numpy` (version 1.18 or above)  : For numerical computations with CPU optimization.
+- `Pillow` (version 7.0.0 or above) : For image processing tasks.
+- `opencv-python-headless` (version 4.5.2 or above) : For image manipulation without GUI overhead.
+- `scikit-image` (version 0.18.1) : For more advanced image processing features.
+
+## CPU Support Options
+
+- Enable multi-threading in libraries that support it for better performance.
+- Use a less memory-intensive backend for image processing (e.g., converting images to lower resolutions when possible).
+
+This setup is intended to work efficiently on machines with limited resources.
